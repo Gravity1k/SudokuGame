@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="sudoku.css">
+    <script src="sudoku.js"></script>
+</head>
+<body>
+    <h1>Sudoku</h1>
+    <div class="buttons">
+    <button class="glow-on-hover" onclick="setGame('easy')"><span>Easy</span></button>
+    <button class="glow-on-hover" onclick="setGame('medium')"><span>Medium</span></button>
+    <button class="glow-on-hover" onclick="setGame('hard')"><span>Hard</span></button>
+    </div>
+    <hr>
+    <h3>Errors :</h3>
+    <h2 id="errors">0</h2>
+    <!-- 9x9 board -->
+    <div id="board"></div>
+    <br>
+    <div id="digits"></div>
+    <div class="modal" id="winModal">
+        <p>Congratulations! You won! Do you want to play again?</p>
+        <div class="modal-buttons">
+            <button onclick="setGame('easy')">Easy</button>
+            <button onclick="setGame('medium')">Medium</button>
+            <button onclick="setGame('hard')">Hard</button>
+            <button id="cancelButton" onclick="hideWinPopup()">Close</button>
+        </div>
+    </div>
+
+    <!-- Overlay HTML -->
+    <div class="overlay" id="overlay"></div>
+</body>
+</html>
