@@ -5,10 +5,8 @@ body {
 }
 
 h1 {
-    font-size: 40px;
-    background: url('images/sudkoufill.png') no-repeat;
-    -webkit-background-clip: text;
-    color: transparent; /* Make the text transparent */
+    font-size: 48px;
+    color: #3e4cca;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,7 +92,8 @@ h3,h2 {
     height: 40px;
     border: none;
     outline: none;
-    color: rgb(78, 130, 197);
+    font-size: 18px;
+    color: rgb(255, 255, 255);
     background: #000000;
     cursor: pointer;
     position: relative;
@@ -137,7 +136,7 @@ h3,h2 {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #646363;
+    background: #3e4cca;
     left: 0;
     top: 0;
     border-radius: 10px;
@@ -237,4 +236,28 @@ h3,h2 {
     left: 0;
     top: 0;
     border-radius: 10px;
+}
+
+.words{
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+    position: absolute;
+    right: 4221px;
+}
+
+#toggleRulesButton{
+    font-size: 16px;
+}
+
+
+#rulesContainer {
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.words {
+    padding: 10px;
 }

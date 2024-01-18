@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sudoku</title>
-    <link rel="stylesheet" href="sudoku.css">
-    <script src="sudoku.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <h1>Sudoku</h1>
@@ -21,6 +21,12 @@
     <div id="board"></div>
     <br>
     <div id="digits"></div>
+    <button id="toggleRulesButton" class="glow-on-hover" onclick="toggleRules()"><span>Show Rules</span></button>
+    <div id="rulesContainer" class="hidden">
+        <h2 class = "words">A 9×9 square must be filled in with numbers from 1-9 with no repeated numbers in each line,
+             horizontally or vertically. To challenge you more, there are 3×3 squares marked out in the grid,
+              and each of these squares can't have any repeat numbers either.</h2>
+    </div>
     <div class="modal" id="winModal">
         <p>Congratulations! You won! Do you want to play again?</p>
         <div class="modal-buttons">

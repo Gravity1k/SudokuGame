@@ -155,6 +155,11 @@ function generateSudokuBoard(difficulty) {
     return { solution, board };
 }
 
+function toggleRules() {
+    var rulesContainer = document.getElementById('rulesContainer');
+    rulesContainer.classList.toggle('hidden');
+}
+
 // Move setGame outside generateSudokuBoard
 function setGame(difficulty) {
     if (typeof difficulty === 'string') {
